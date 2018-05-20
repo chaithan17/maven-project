@@ -9,7 +9,7 @@ pipeline {
             post {
                 success {
                     echo 'test my Archiving...'
-                    archiveArtifacts artifacts: 'C:\Jenkins\workspace\package\webapp\target/*.war'
+                    archiveArtifacts artifacts: 'C:\Jenkins\workspace\package\webapp\target\*.war'
                 }
             }
         }
